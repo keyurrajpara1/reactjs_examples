@@ -1,0 +1,28 @@
+ReactJS
+- Install nodejs
+- If npm 5.1 or earlier then
+	[1] npm install -g create-react-app
+	[2] create-react-app my-app
+- If npm is greater than 5.1 then
+	[1] npx create-react-app my-app
+	[2] cd my-app
+	[3] npm start
+Or
+- [1] npm install -g create-react-app
+  [2] npx create-react-app my-app
+  [3] cd my-app
+  [4] npm start
+- There are 2 types of component
+[1] Functional component
+[2] Class component
+- Props
+[1] props get passed to the component.
+[2] props are immutable (cannot be changed/modify)
+[3] props - functional components
+[4] this.props - class components.
+npm install tachyons
+- State
+[1] State is managed within the component.
+[2] State can be changed.
+[3] useState Hook - functional Component
+[4] this.state - class components.
