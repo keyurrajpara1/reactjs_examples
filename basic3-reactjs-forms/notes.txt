@@ -1,7 +1,0 @@
-npm install react-router-dom
-npm start
-
-[1]
-To use routing in react then import {BrowserRouter} from 'react-router-dom';
-
-[2]
