@@ -1,0 +1,39 @@
+*{
+	margin: 0; padding: 0;
+}
+.menuStyle{
+	width: 100%;
+	height: 100px;
+	background: #6ab04c;
+	color: white;
+}
+.menuStyle ul{
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menuStyle ul li{
+	list-style: none;
+	text-transform: uppercase;
+	color: white;
+}
+.menuStyle ul li a{
+	color: white;
+}
+.aboutStyle{
+	width: 100%; height: 300px;
+	background: #badc58;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contactStyle{
+	width: 100%; height: 300px;
+	background: #7bed9f;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
