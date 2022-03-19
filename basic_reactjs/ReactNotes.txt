@@ -1,0 +1,23 @@
+
+Prerequisite for reactjs
+- html, css, javascript
+- es6
+- npm
+
+Install VS Code
+Install Extensions:
+- Babel Javascript (highlights react,es6 code)
+- Javascript Es6
+- Vscode-icons
+
+React Installation
+1: Install NodeJS and NPM
+2: Install VS code/Sublime/Atom/Brackets
+3: Install React from terminal
+   a) npm install -g create-react-app
+   b) create-react-app --version
+   c) create-react-app <projectName>
+
+Commands:
+node -v
+npm -v
