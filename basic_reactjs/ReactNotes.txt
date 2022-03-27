@@ -21,3 +21,10 @@ React Installation
 Commands:
 node -v
 npm -v
+
+React Hooks
+[1] Hooks are the new feature introduced in the React 16.8 version.
+[2] It allows you to use state and other React features without writing a class. Hooks are the functions which "hook into" React state and lifecycle features from function components.
+[3] It does not work inside classes.
+[4] Hooks should always be used at the top level of the React functions.
+[5] Node version 6 or above. NPM version 5.2 or above
