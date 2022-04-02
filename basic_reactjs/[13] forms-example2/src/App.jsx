@@ -1,36 +1,49 @@
 import React, { useState } from 'react';
 
 const App = () => {
-	const [currentFirstName, setFirstName] = useState();
-	const [currentLastName, setLastName] = useState();
+	const [formData, setFormData] = useState({
+		firstName: '',
+		lastName: ''
+	});
 
-	const [myFirstName, setMyFirstName] = useState();
-	const [myLastName, setMyLastName] = useState();
+	const inputEvent = (event) => {
+		let {value:inputValue, name:inputName} = event.target;
 
-	const inputFirstNameEvent = (event) => {
-		let inputValue = event.target.value;
-		setFirstName(inputValue);
-	};
-
-	const inputLastNameEvent = (event) => {
-		let inputValue = event.target.value;
-		setLastName(inputValue);
+		// React setState previous value
+		setFormData((previousValue) => {
+			// console.log(previousValue);
+			return {
+				...previousValue,
+				[inputName]: inputValue
+			};
+			/*if(inputName==='firstName'){
+				return {
+					firstName: inputValue,
+					lastName: previousValue.lastName
+				};
+			}
+			else if(inputName==='lastName'){
+				return {
+					firstName: previousValue.firstName,
+					lastName: inputValue
+				};
+			}*/
+		});
 	};
 
 	const onSubmit = (event) => {
 		event.preventDefault();
-		setMyFirstName(currentFirstName);
-		setMyLastName(currentLastName);
+		alert("Form submitted");
 	};
 	return (
 		<>
 			<div>
 				<form onSubmit={onSubmit}>
 					<div>
-						<h1>Hello {myFirstName} {myLastName}</h1>
-						<input type="text" placeholder="Enter First Name" onChange={inputFirstNameEvent} value={currentFirstName} />
+						<h1>Hello {formData.firstName} {formData.lastName}</h1>
+						<input type="text" name="firstName" placeholder="Enter First Name" onChange={inputEvent} value={formData.firstName} />
 						<br />
-						<input type="text" placeholder="Enter Last Name" onChange={inputLastNameEvent} value={currentLastName} />
+						<input type="text"name="lastName" placeholder="Enter Last Name" onChange={inputEvent} value={formData.lastName} />
 						<br />
 						<button type="submit">Click Me</button>
 					</div>
