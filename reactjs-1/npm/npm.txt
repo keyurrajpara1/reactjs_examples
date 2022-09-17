@@ -74,3 +74,11 @@ npm uninstall lodash --save
 [17]
 npm update <packageName> --save
 npm update lodash --save
+
+[18]
+npm docs lodash
+
+[19]
+npm ls
+
+[20]
