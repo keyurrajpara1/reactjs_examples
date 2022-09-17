@@ -21,3 +21,69 @@ npm install npm@latest -g
 -g means globally
 
 [6]
+To help for npm command:
+npm
+or
+npm -help
+
+[7]
+To setup new or existing npm package command:
+npm init
+
+[8]
+npm config
+
+Subcommand:
+	npm config list -l
+	
+[9]
+npm config set key "value"
+For example:
+npm config set init-author-name "Keyur Rajpara"
+
+[10]
+For all default setting:
+npm init -y
+
+[11]
+npm config get init-author-name
+
+[12]
+npm config edit
+
+For global:
+npm config edit --global
+
+[13]
+npm config delete init-author-name
+
+[14]
+How to install package:
+npm install <packageName>
+
+For example:
+npm install lodash
+
+[15]
+npm install
+
+[16]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
