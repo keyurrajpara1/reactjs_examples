@@ -68,22 +68,9 @@ npm install lodash
 npm install
 
 [16]
+npm uninstall <packageName> --save
+npm uninstall lodash --save
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[17]
+npm update <packageName> --save
+npm update lodash --save
