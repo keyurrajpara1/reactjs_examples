@@ -1,0 +1,23 @@
+
+NPM - Node Package Manager
+[1]
+To check npm is installed or not
+npm -v
+
+[2]
+Go to https://nodejs.org/en/
+Download LTS(Long-term support) version
+
+[3]
+Install setup
+
+[4]
+https://www.npmjs.com/
+
+[5]
+To update npm:
+npm install npm@latest -g
+
+-g means globally
+
+[6]
