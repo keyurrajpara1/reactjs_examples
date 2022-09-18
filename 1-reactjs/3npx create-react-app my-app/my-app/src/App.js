@@ -8,18 +8,18 @@ class App extends Component{
 	render(){
 		// return React.createElement("h1", null, "Hello World");
 		// return <h1>Hello World</h1>;
-		return (
+		/*return (
 			<div>
 				<h1>Hello World</h1>
 				<p>Welcome</p>
 			</div>
-		);
-		/*return (
+		);*/
+		return (
 			<>
-				<h1>Hello World</h1>
+				<h1>Hello {this.props.name}</h1>
 				<p>Welcome</p>
 			</>
-		);*/
+		);
 		/*return (
 			<React.Fragment>
 				<h1>Hello World</h1>
