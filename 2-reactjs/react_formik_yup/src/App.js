@@ -50,7 +50,7 @@ function App() {
                       <p className="form-error">{errors.confirm_password}</p>
                     ) : null}
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" disabled={!formik.isValid || formik.isSubmitting} />
       </form>
     </div>
   );
