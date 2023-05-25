@@ -13,7 +13,7 @@ const initialValues = {
 };
 
 function App() {
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+  const { isValid, isSubmitting, values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues,
       validationSchema: signUpSchema,
@@ -50,7 +50,7 @@ function App() {
                       <p className="form-error">{errors.confirm_password}</p>
                     ) : null}
 
-        <input type="submit" value="Submit" disabled={!formik.isValid || formik.isSubmitting} />
+        <input type="submit" value="Submit" disabled={!isValid || isSubmitting} />
       </form>
     </div>
   );
