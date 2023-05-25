@@ -1,0 +1,10 @@
+
+Home page: http://localhost:3000/
+
+Search page: http://localhost:3000/search/
+
+Restaurant detail page: http://localhost:3000/restaurant/slug/
+
+Restaurant menu page: http://localhost:3000/restaurant/slug/menu/
+
+Reservation page: http://localhost:3000/reserve/slug/
